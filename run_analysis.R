@@ -4,6 +4,8 @@
 
 ##load all packages
 require(downloader)
+require(plyr)
+
 ## download the zip file 
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" ## the url of the zip file
 
@@ -55,7 +57,7 @@ overall <- cbind(allsubject, ally, allx)
 write.csv(overall, "final_data_set.csv")###check the "final_data_set.csv in repo
 
 # finally, form the new table 
-require(plyr)
+
 averages_data <- ddply(overall, .(subject, activity), function(x) colMeans(x[, -(1:2)]))
 
 write.csv(averages_data, "file2.csv")####check the csv file("file2.csv in repo)
