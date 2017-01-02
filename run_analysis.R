@@ -52,9 +52,10 @@ ally[ ,1] <- factor(ally[ ,1], levels = 1:6, labels = c("walking", "walking upst
 names(ally) <- "activity"
 names(allsubject) <-"subject"
 overall <- cbind(allsubject, ally, allx)
+write.csv(overall, "final_data_set.csv")###check the "final_data_set.csv in repo
 
 # finally, form the new table 
 require(plyr)
 averages_data <- ddply(overall, .(subject, activity), function(x) colMeans(x[, -(1:2)]))
 
-averages_data
+write.csv(averages_data, "file2.csv")####check the csv file("file2.csv in repo)
