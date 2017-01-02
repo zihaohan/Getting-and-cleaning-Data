@@ -12,10 +12,10 @@ The main steps of the project:
 
 ## files
 This repo includes the following files and document:
-1. README.md
-2. script(run_analysis.R)
-3. CodeBook.md
-4. final tidy data set in csv file
+* 'README.md'
+* 'script(run_analysis.R)'
+* 'CodeBook.md'
+* 'final tidy data set in csv file'
 
 
 
