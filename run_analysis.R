@@ -19,7 +19,6 @@ setwd(".\\data")
 
 ##first, train group
 setwd(".\\UCI HAR Dataset\\train")
-dir()
 x_train <- read.table("X_train.txt")
 y_train<- read.table("y_train.txt")
 subject_train <- read.table("subject_train.txt")
