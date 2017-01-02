@@ -34,7 +34,6 @@ allx <- rbind(x_train, x_test)
 ally <- rbind(y_train, y_test)
 allsubject <- rbind(subject_train, subject_test)
 
-##subset the data set including keyword(s)
 
 setwd("..")
 
